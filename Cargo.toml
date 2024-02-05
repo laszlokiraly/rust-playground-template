@@ -1,11 +1,19 @@
 [package]
 name = "playground"
 version = "0.1.0"
-authors = ["ubuntu"]
+authors = ["<author>"]
 edition = "2018"
 
+# implicitly given by package name and project structure,
+# can be omitted
 [[bin]]
 name = "playground"
 path = "src/main.rs"
+
+# implicitly given by package name and project structure,
+# can be omitted
+[lib]
+name = "playground"
+path = "src/lib.rs"
 
 [dependencies]
